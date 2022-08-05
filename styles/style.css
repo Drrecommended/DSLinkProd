@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3f768a;
+  font-family: kallisto, sans-serif;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #fdde14;
+  border: 2px solid black;
+  height: 42px;
+  min-width: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header {
+  background-color: white;
+  padding: .5em .5em 0em .5em;
+  border: 2px solid black;
+}
+
+.header .banner {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.header .social-links {
+  margin: 0;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+}
+
+.header .social-links li .icon {
+  max-width: 42px;
+  margin-left: 10px;
+}
+
+.header .social-links li p {
+  white-space: nowrap;
+}
+
+.marquee {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #fdde14;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.marquee div {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-left: 100%;
+  display: inline-block;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+form input {
+  height: 42px;
+  margin: 0;
+  padding: 0;
+}
+
+.errorAnim {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
