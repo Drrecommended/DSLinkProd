@@ -18,7 +18,7 @@ cta.addEventListener('click', (e) => {
 
     fetch('/subscribe', fetchData).then((res) => {
       if (res.ok) {
-        //yay
+        console.log('yay it works.')
       } else {
         error.classList.add('errorAnim')
       }
