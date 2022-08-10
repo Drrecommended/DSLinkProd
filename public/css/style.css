@@ -4,26 +4,30 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: #3f768a;
   font-family: kallisto, sans-serif;
 }
 
+.icon {
+  max-width: 40px;
+}
+
 /* Typography */
 
-h1 {
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
   font-size: 1.6rem;
   font-weight: 900;
   -webkit-text-stroke: 2px black;
   color: white;
   letter-spacing: 2px;
   text-shadow: 0 3px 3px black;
-  margin-bottom: 10px;
-}
-
-h1,
-h2 {
-  text-align: center;
 }
 
 li {
@@ -42,6 +46,10 @@ li {
   border: 2px solid black;
 }
 
+.header .icon {
+  margin-left: 10px;
+}
+
 .header .banner {
   width: 100%;
   margin-bottom: 2px;
@@ -52,11 +60,6 @@ li {
   justify-content: right;
   align-items: center;
   display: flex;
-}
-
-.header .social-links li .icon {
-  max-width: 42px;
-  margin-left: 10px;
 }
 
 .header .social-links li p {
@@ -96,16 +99,19 @@ li {
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
+  margin-bottom: 10px;
 }
 
-img {
+.hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Mailing List */
-.mailing-list {
+
+.mailing-list,
+.artist-connect {
   padding: 10px;
 }
 
@@ -126,20 +132,79 @@ form {
   background-color: #fdde14;
   border: 2px solid black;
   border-left: 0;
-  height: 42px;
   min-width: 42px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Artist Connect */
-
 form input {
   height: 42px;
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 
 .errorAnim {
   color: red;
+}
+
+/* Artist Connect */
+.artist-connect {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.artist-profile p {
+  font-weight: 600;
+}
+
+.artist-profile {
+  margin: 0 auto;
+  max-width: 290px;
+}
+
+
+
+.artist-profile .social-links {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  grid-template-columns: auto 40px 40px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.artist-profile:last-of-type {
+  margin-bottom: 60px;
+}
+
+
+/* Footer */ 
+
+footer {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  height: 70px;
+  max-width: 1280px;
+  text-align: center;
+  background-color: white;
+}
+
+footer .footer-border {
+  height: 10px;
+  border-bottom: 2px solid black;
+  background-color: #fdde14;
+}
+
+.logo-wrapper {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  text-align: center;
 }
