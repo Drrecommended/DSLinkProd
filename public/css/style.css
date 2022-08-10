@@ -9,27 +9,36 @@ body {
   font-family: kallisto, sans-serif;
 }
 
+/* Typography */
+
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 0 3px 3px black;
+  margin-bottom: 10px;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 li {
   list-style: none;
 }
 
-.button {
-  cursor: pointer;
-  background-color: #fdde14;
-  border: 2px solid black;
-  height: 42px;
-  min-width: 42px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.page-container {
+  max-width: 1280px;
+  margin: auto;
 }
 
+/* Header 8 */
 .header {
   background-color: white;
-  padding: .5em .5em 0em .5em;
+  padding: 0.5em 0.5em 0em 0.5em;
   border: 2px solid black;
 }
 
@@ -54,6 +63,8 @@ li {
   white-space: nowrap;
 }
 
+/* marquee */
+
 .marquee {
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -62,7 +73,6 @@ li {
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 
 .marquee div {
@@ -79,6 +89,51 @@ li {
   }
 }
 
+/* hero image */
+
+.hero {
+  height: 20vh;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mailing List */
+.mailing-list {
+  padding: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+.email {
+  width: 250px;
+  outline: none;
+  border: none;
+  box-shadow: inset 0 0 0 2px black;
+  padding-left: 8px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #fdde14;
+  border: 2px solid black;
+  border-left: 0;
+  height: 42px;
+  min-width: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Artist Connect */
+
 form input {
   height: 42px;
   margin: 0;
@@ -88,4 +143,3 @@ form input {
 .errorAnim {
   color: red;
 }
-/*# sourceMappingURL=style.css.map */
