@@ -4,19 +4,24 @@
   box-sizing: border-box;
 }
 
-
+html {
+  height: 100%;
+}
 
 body {
   background-color: #3f768a;
   font-family: kallisto, sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .icon {
   max-width: 40px;
 }
 
-/* Typography */
 
+/* Typography */
 
 h1,
 h2 {
@@ -35,8 +40,10 @@ li {
 }
 
 .page-container {
-  max-width: 1280px;
+  max-width: 100vw;
+  width: 1280px;
   margin: auto;
+  min-height: 100%;
 }
 
 /* Header 8 */
@@ -137,10 +144,13 @@ form {
   letter-spacing: 2px;
 }
 
+
 form input {
-  height: 42px;
+  height: 51px;
   margin-bottom: 20px;
   padding: 0;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .errorAnim {
@@ -155,14 +165,13 @@ form input {
 
 .artist-profile p {
   font-weight: 600;
+  padding-left: 8px;
 }
 
 .artist-profile {
   margin: 0 auto;
-  max-width: 290px;
+  max-width: 293px;
 }
-
-
 
 .artist-profile .social-links {
   display: grid;
@@ -172,25 +181,27 @@ form input {
   background-color: white;
   margin-bottom: 10px;
   border: 2px solid black;
-  padding: 10px;
+  padding: 2px;
+  padding-right: 8px;
 }
 
-.artist-profile:last-of-type {
-  margin-bottom: 60px;
-}
+/* .artist-profile:last-of-type {
+  margin-bottom: 30px;
+} */
 
-
-/* Footer */ 
+/* Footer */
 
 footer {
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
-  width: 100%;
-  height: 70px;
-  max-width: 1280px;
+  max-width: 100vw;
+  width: 1280px;
+  margin: 0 auto;
   text-align: center;
   background-color: white;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 footer .footer-border {
@@ -200,11 +211,16 @@ footer .footer-border {
 }
 
 .logo-wrapper {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  bottom: 2px;
+  margin: 0 auto;
+  width: 100px;
   text-align: center;
+  padding: 1em;
+}
+
+.logo-wrapper img {
+  width: 72px;
+}
+
+footer p {
+  padding: 0.5em;
 }
